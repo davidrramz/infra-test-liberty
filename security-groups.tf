@@ -51,6 +51,14 @@ resource "aws_security_group" "web-sg" {
     protocol    = "tcp"
   }
 
+  ingress {
+    description = "Allow external web traffic"
+    cidr_blocks = ["0.0.0.0/0"]
+    from_port   = 8080
+    to_port     = 8080
+    protocol    = "tcp"
+  }
+
   egress {
     from_port   = 0
     to_port     = 0
