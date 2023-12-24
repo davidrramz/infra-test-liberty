@@ -1,5 +1,5 @@
-aws_region = "us-east-1"
-country = "co"
+aws_region   = "us-east-1"
+country      = "co"
 organization = "liberty"
 
 vpc_cidr = "10.0.0.0/16"
